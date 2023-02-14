@@ -1,0 +1,203 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Lato', sans-serif;
+
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+  }
+
+  .sticky a {
+    color: black;
+  }
+
+.top-container {
+    background-image: url('./assets/Layer\ 628.png');
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    min-width: 500px;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.history-container {
+    background-image: url('./assets/peak.png');
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.history-text-container {
+    display: flex;
+    justify-content: center;
+}
+
+#history-number {
+    opacity: .5;
+    color: darkgray;
+    font-size: 8rem;
+}
+
+#history-text {
+    width: 40%;
+    
+}
+
+
+.team-container {
+    background-image: url('./assets/bottom.png');
+    height: 70vh;
+    width: 100vw;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.climb-container {
+    width: 100vw;
+    height: 30vh;
+    background-color: white;
+}
+
+.slide-style {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,80,.5);
+}
+
+.mountain-container {
+    display: flex;
+    background-color: rgba(0,0,80,.5);
+    height: 5vh;
+    font-size: 24px;
+    align-items: center;
+}
+
+.mtn-one-text {
+    margin-left: 20vw;
+}
+
+.mtn-two-text {
+    margin-left: 35px;
+}
+
+.schedule-container {
+    background-color: rgba(256,256,256,0.8);
+    width: 25vw;
+    margin-left: 20vw;
+    margin-top: 10vh;
+}
+
+.footer {
+    background-color: rgba(0,0,80,.5);
+    display: flex;
+    width: 100vw;
+    align-items: center;
+}
+
+
+#mtn-text {
+    width: 20%;
+
+}
+
+#copyright-text {
+    width: 100vw;
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    display: block;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="navbar" id="navbar">
+        <img src="./assets/Logo.png" alt="mountain logo" href="#top"/>
+        <a href="#history" id="history-btn-nav">01. History</a>
+        <a href="#team" id="team-btn-nav">02. Team</a>
+    </div>
+    <div class="top-container" id="top">
+        
+    </div>
+    <div class="history-container" id="history">
+        <div class="history-text-container">
+            <h1 id="history-number">01.</h1><h1 id="history-title">History</h1>
+            <p id="history-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, incidunt atque accusamus, pariatur quibusdam vel porro maiores vero officiis vitae consequuntur iste asperiores similique sint harum nesciunt autem amet tenetur. Temporibus pariatur quis nisi consequatur corporis ratione incidunt id esse!</p>
+        </div>
+
+        <div class="slide-style">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="./assets/car1.png">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="./assets/car2.png">
+                </div>
+                
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="climb-container">
+        <div class="climb-text-container">
+            <h1 id="climb-number">02.</h1><h1 id="climb-title">Climb</h1>
+            <p id="climb-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, incidunt atque accusamus, pariatur quibusdam vel porro maiores vero officiis vitae consequuntur iste asperiores similique sint harum nesciunt autem amet tenetur. Temporibus pariatur quis nisi consequatur corporis ratione incidunt id esse!</p>
+        </div>
+    </div>
+    <div class="mountain-container">
+        <a class="mtn-one-text">MOUNTAIN 1</a>
+        <a class="mtn-two-text">MOUNTAIN 2</a>
+    </div>
+    <div class="team-container" id="team">
+        <div class="schedule-container">
+            <h1 id="schedule-title">SCHEDULE</h1>
+            <table>
+                <tr>
+                    <td>25 Nov 2016</td>
+                    <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                    <td>28 Nov 2016</td>
+                    <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                    <td>18 Dec 2016</td>
+                    <td>Vestibulum viverra</td>
+                </tr>
+                <tr>
+                    <td>7 Jan 2017</td>
+                    <td>Vestibulum viverra</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="./assets/Logo.png" id="footer-logo"/><p id="mtn-text">LOSANGELES </br> MOUNTAINS</p>
+        <p id="copyright-text">COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
